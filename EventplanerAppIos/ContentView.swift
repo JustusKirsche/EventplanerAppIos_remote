@@ -8,7 +8,7 @@
 import SwiftUI
 import UIKit
 
-
+//test01
 struct ContentView: View {
   //  @StateObject var data: EventData
     var body: some View {
