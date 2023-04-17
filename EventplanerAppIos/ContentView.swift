@@ -9,7 +9,7 @@ import SwiftUI
 import UIKit
 
 @State var eventClass
-
+//habe keine ahnung wie ich das übergben kann 
 struct ContentView: View {
     var body: some View {
         VStack {
