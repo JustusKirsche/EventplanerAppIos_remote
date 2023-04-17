@@ -6,7 +6,7 @@
 //
 
 import Foundation
-public class eventClass {
+class eventClass: ObservableObject{
     @Published var name: String = ""
     @Published var description: String = ""
     @Published var location: String = ""
@@ -20,10 +20,10 @@ public class eventClass {
     @Published var participants: Array<participantClass> = []
     
 }
-class eventArryClass {
+class eventArrayClass: ObservableObject {
     @Published var eventArray: Array<eventClass> = []
 }
-public class participantClass{
+class participantClass: ObservableObject{
     let name: String = ""
     let age: Int = 0
     var joynd: Bool = false
