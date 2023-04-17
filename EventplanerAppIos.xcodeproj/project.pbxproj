@@ -1,0 +1,586 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		56D0479D29ED213A00B226F6 /* EventplanerAppIosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D0479C29ED213A00B226F6 /* EventplanerAppIosApp.swift */; };
+		56D0479F29ED213A00B226F6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D0479E29ED213A00B226F6 /* ContentView.swift */; };
+		56D047A129ED213A00B226F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56D047A029ED213A00B226F6 /* Assets.xcassets */; };
+		56D047A429ED213A00B226F6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56D047A329ED213A00B226F6 /* Preview Assets.xcassets */; };
+		56D047AE29ED213B00B226F6 /* EventplanerAppIosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D047AD29ED213B00B226F6 /* EventplanerAppIosTests.swift */; };
+		56D047B829ED213B00B226F6 /* EventplanerAppIosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D047B729ED213B00B226F6 /* EventplanerAppIosUITests.swift */; };
+		56D047BA29ED213B00B226F6 /* EventplanerAppIosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D047B929ED213B00B226F6 /* EventplanerAppIosUITestsLaunchTests.swift */; };
+		56D047C729ED21D200B226F6 /* EventData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D047C629ED21D200B226F6 /* EventData.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		56D047AA29ED213B00B226F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 56D0479129ED213A00B226F6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 56D0479829ED213A00B226F6;
+			remoteInfo = EventplanerAppIos;
+		};
+		56D047B429ED213B00B226F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 56D0479129ED213A00B226F6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 56D0479829ED213A00B226F6;
+			remoteInfo = EventplanerAppIos;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		56D0479929ED213A00B226F6 /* EventplanerAppIos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventplanerAppIos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		56D0479C29ED213A00B226F6 /* EventplanerAppIosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventplanerAppIosApp.swift; sourceTree = "<group>"; };
+		56D0479E29ED213A00B226F6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		56D047A029ED213A00B226F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		56D047A329ED213A00B226F6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		56D047A929ED213B00B226F6 /* EventplanerAppIosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventplanerAppIosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		56D047AD29ED213B00B226F6 /* EventplanerAppIosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventplanerAppIosTests.swift; sourceTree = "<group>"; };
+		56D047B329ED213B00B226F6 /* EventplanerAppIosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventplanerAppIosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		56D047B729ED213B00B226F6 /* EventplanerAppIosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventplanerAppIosUITests.swift; sourceTree = "<group>"; };
+		56D047B929ED213B00B226F6 /* EventplanerAppIosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventplanerAppIosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		56D047C629ED21D200B226F6 /* EventData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventData.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		56D0479629ED213A00B226F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56D047A629ED213B00B226F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56D047B029ED213B00B226F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		56D0479029ED213A00B226F6 = {
+			isa = PBXGroup;
+			children = (
+				56D0479B29ED213A00B226F6 /* EventplanerAppIos */,
+				56D047AC29ED213B00B226F6 /* EventplanerAppIosTests */,
+				56D047B629ED213B00B226F6 /* EventplanerAppIosUITests */,
+				56D0479A29ED213A00B226F6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		56D0479A29ED213A00B226F6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				56D0479929ED213A00B226F6 /* EventplanerAppIos.app */,
+				56D047A929ED213B00B226F6 /* EventplanerAppIosTests.xctest */,
+				56D047B329ED213B00B226F6 /* EventplanerAppIosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		56D0479B29ED213A00B226F6 /* EventplanerAppIos */ = {
+			isa = PBXGroup;
+			children = (
+				56D0479C29ED213A00B226F6 /* EventplanerAppIosApp.swift */,
+				56D0479E29ED213A00B226F6 /* ContentView.swift */,
+				56D047A029ED213A00B226F6 /* Assets.xcassets */,
+				56D047A229ED213A00B226F6 /* Preview Content */,
+				56D047C629ED21D200B226F6 /* EventData.swift */,
+			);
+			path = EventplanerAppIos;
+			sourceTree = "<group>";
+		};
+		56D047A229ED213A00B226F6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				56D047A329ED213A00B226F6 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		56D047AC29ED213B00B226F6 /* EventplanerAppIosTests */ = {
+			isa = PBXGroup;
+			children = (
+				56D047AD29ED213B00B226F6 /* EventplanerAppIosTests.swift */,
+			);
+			path = EventplanerAppIosTests;
+			sourceTree = "<group>";
+		};
+		56D047B629ED213B00B226F6 /* EventplanerAppIosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				56D047B729ED213B00B226F6 /* EventplanerAppIosUITests.swift */,
+				56D047B929ED213B00B226F6 /* EventplanerAppIosUITestsLaunchTests.swift */,
+			);
+			path = EventplanerAppIosUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		56D0479829ED213A00B226F6 /* EventplanerAppIos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56D047BD29ED213B00B226F6 /* Build configuration list for PBXNativeTarget "EventplanerAppIos" */;
+			buildPhases = (
+				56D0479529ED213A00B226F6 /* Sources */,
+				56D0479629ED213A00B226F6 /* Frameworks */,
+				56D0479729ED213A00B226F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EventplanerAppIos;
+			productName = EventplanerAppIos;
+			productReference = 56D0479929ED213A00B226F6 /* EventplanerAppIos.app */;
+			productType = "com.apple.product-type.application";
+		};
+		56D047A829ED213B00B226F6 /* EventplanerAppIosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56D047C029ED213B00B226F6 /* Build configuration list for PBXNativeTarget "EventplanerAppIosTests" */;
+			buildPhases = (
+				56D047A529ED213B00B226F6 /* Sources */,
+				56D047A629ED213B00B226F6 /* Frameworks */,
+				56D047A729ED213B00B226F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				56D047AB29ED213B00B226F6 /* PBXTargetDependency */,
+			);
+			name = EventplanerAppIosTests;
+			productName = EventplanerAppIosTests;
+			productReference = 56D047A929ED213B00B226F6 /* EventplanerAppIosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		56D047B229ED213B00B226F6 /* EventplanerAppIosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56D047C329ED213B00B226F6 /* Build configuration list for PBXNativeTarget "EventplanerAppIosUITests" */;
+			buildPhases = (
+				56D047AF29ED213B00B226F6 /* Sources */,
+				56D047B029ED213B00B226F6 /* Frameworks */,
+				56D047B129ED213B00B226F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				56D047B529ED213B00B226F6 /* PBXTargetDependency */,
+			);
+			name = EventplanerAppIosUITests;
+			productName = EventplanerAppIosUITests;
+			productReference = 56D047B329ED213B00B226F6 /* EventplanerAppIosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		56D0479129ED213A00B226F6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					56D0479829ED213A00B226F6 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					56D047A829ED213B00B226F6 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 56D0479829ED213A00B226F6;
+					};
+					56D047B229ED213B00B226F6 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 56D0479829ED213A00B226F6;
+					};
+				};
+			};
+			buildConfigurationList = 56D0479429ED213A00B226F6 /* Build configuration list for PBXProject "EventplanerAppIos" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 56D0479029ED213A00B226F6;
+			productRefGroup = 56D0479A29ED213A00B226F6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				56D0479829ED213A00B226F6 /* EventplanerAppIos */,
+				56D047A829ED213B00B226F6 /* EventplanerAppIosTests */,
+				56D047B229ED213B00B226F6 /* EventplanerAppIosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		56D0479729ED213A00B226F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56D047A429ED213A00B226F6 /* Preview Assets.xcassets in Resources */,
+				56D047A129ED213A00B226F6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56D047A729ED213B00B226F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56D047B129ED213B00B226F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		56D0479529ED213A00B226F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56D0479F29ED213A00B226F6 /* ContentView.swift in Sources */,
+				56D0479D29ED213A00B226F6 /* EventplanerAppIosApp.swift in Sources */,
+				56D047C729ED21D200B226F6 /* EventData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56D047A529ED213B00B226F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56D047AE29ED213B00B226F6 /* EventplanerAppIosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56D047AF29ED213B00B226F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56D047B829ED213B00B226F6 /* EventplanerAppIosUITests.swift in Sources */,
+				56D047BA29ED213B00B226F6 /* EventplanerAppIosUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		56D047AB29ED213B00B226F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 56D0479829ED213A00B226F6 /* EventplanerAppIos */;
+			targetProxy = 56D047AA29ED213B00B226F6 /* PBXContainerItemProxy */;
+		};
+		56D047B529ED213B00B226F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 56D0479829ED213A00B226F6 /* EventplanerAppIos */;
+			targetProxy = 56D047B429ED213B00B226F6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		56D047BB29ED213B00B226F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		56D047BC29ED213B00B226F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		56D047BE29ED213B00B226F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"EventplanerAppIos/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = JustusKirschenstein.EventplanerAppIos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		56D047BF29ED213B00B226F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"EventplanerAppIos/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = JustusKirschenstein.EventplanerAppIos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		56D047C129ED213B00B226F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = JustusKirschenstein.EventplanerAppIosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EventplanerAppIos.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EventplanerAppIos";
+			};
+			name = Debug;
+		};
+		56D047C229ED213B00B226F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = JustusKirschenstein.EventplanerAppIosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EventplanerAppIos.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EventplanerAppIos";
+			};
+			name = Release;
+		};
+		56D047C429ED213B00B226F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = JustusKirschenstein.EventplanerAppIosUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EventplanerAppIos;
+			};
+			name = Debug;
+		};
+		56D047C529ED213B00B226F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = JustusKirschenstein.EventplanerAppIosUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EventplanerAppIos;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		56D0479429ED213A00B226F6 /* Build configuration list for PBXProject "EventplanerAppIos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56D047BB29ED213B00B226F6 /* Debug */,
+				56D047BC29ED213B00B226F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56D047BD29ED213B00B226F6 /* Build configuration list for PBXNativeTarget "EventplanerAppIos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56D047BE29ED213B00B226F6 /* Debug */,
+				56D047BF29ED213B00B226F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56D047C029ED213B00B226F6 /* Build configuration list for PBXNativeTarget "EventplanerAppIosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56D047C129ED213B00B226F6 /* Debug */,
+				56D047C229ED213B00B226F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56D047C329ED213B00B226F6 /* Build configuration list for PBXNativeTarget "EventplanerAppIosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56D047C429ED213B00B226F6 /* Debug */,
+				56D047C529ED213B00B226F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 56D0479129ED213A00B226F6 /* Project object */;
+}
