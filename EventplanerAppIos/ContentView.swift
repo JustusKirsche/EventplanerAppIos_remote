@@ -45,23 +45,27 @@ struct ContentView: View {
         NavigationView{
             VStack {
                 Image(systemName: "globe")
+                    .foregroundColor(.green)
+                    .scaleEffect(2)
+                    .rotationEffect(.degrees(15))
                     .imageScale(.large)
                 Text("Your Events")
+                    .font(.largeTitle)
                     .padding(.all)
                 
                 //Hier muss der Array mit den Events herrein mit hilfe von foreech
                 
                 List{
                     ForEach(eventArray){ event in
-                        let index = eventArray.firstIndex(where: {$0.id == event.id})
+//                        ist vom alten code kann noch nützlich sein
+//                        let index = eventArray.firstIndex(where: {$0.id == event.id})
                         NavigationLink(
                             "\(event.name)",
                             destination: EventInfoView(
-                                //                            state: createState(index: index!)
+                                state : CreateEventViewState(),
+                                eventArray: $eventArray,
+                                index: 0
                             )
-                            //                        eventArray: $eventArray,
-                            //                        index: index ?? 0
-                            //                        edit: true
                         )
                     }
                 }
@@ -73,13 +77,14 @@ struct ContentView: View {
                             eventArray: $eventArray,
                             index: 0
                         )
-                        .navigationTitle("Create a Car"),
+                        .navigationTitle("Create a Event"),
                         label: {
                             Image(systemName: "plus")
                         })
+                    .foregroundColor(.blue)
                 }
             }
-            .foregroundColor(/*@START_MENU_TOKEN@*/.gray/*@END_MENU_TOKEN@*/)
+            .foregroundColor(.black)
         }
     }
 }

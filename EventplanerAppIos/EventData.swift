@@ -11,15 +11,15 @@ import SwiftUI
 struct Event: Identifiable{
     @State var id = UUID()
     
-    @State  var name: String
-    @State  var description: String
+    @State var name: String
+    @State var description: String
     @State var location: String
-    @State  var date: String
-    @State  var contact: String
+    @State var date: String
+    @State var contact: String
     
-    @State  var costs: Int
-    @State   var maxParticipant: Int
-    @State  var minAge: Int
+    @State var costs: Int
+    @State var maxParticipant: Int
+    @State var minAge: Int
     
     //    kommt noch
     //    var participants: Array<participantClass> = []

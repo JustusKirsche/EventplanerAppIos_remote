@@ -20,7 +20,7 @@ class CreateEventViewState: ObservableObject{
     @State var contact: String = ""
     
     @State var costs: Int = 0
-    @State var maxParticipant: Int = 99
+    @State var maxParticipant: Int = 0
     @State var minAge: Int = 0
 
 //    sind nur zum umwandeln da
