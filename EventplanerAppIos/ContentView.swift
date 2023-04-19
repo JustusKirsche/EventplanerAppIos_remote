@@ -28,11 +28,11 @@
 // }
 // }
 // }
- 
- 
- 
- 
- 
+
+
+
+
+
 import SwiftUI
 import UIKit
 import SlidingTabView
@@ -46,7 +46,7 @@ struct ContentView: View {
     @State private var showingLoginScreen = false
     @State private var tabIndex = 0
     //  @StateObject var data: EventData
-//    eventArray.append(<#T##Element#>)
+    //    eventArray.append(<#T##Element#>)
     var body: some View {
         VStack {
             SlidingTabView(selection: $tabIndex,
@@ -104,7 +104,7 @@ struct ContentView: View {
                                 EmptyView()
                             }
                         }
-
+                        
                     }
                     .navigationBarHidden(true)
                     
@@ -113,44 +113,37 @@ struct ContentView: View {
             } else if tabIndex == 2 {
                 Text("Settings")
             }
-                        
-            func autheticateUser(username: String, password: String) {
-                if username.lowercased() == "aileen0804" {
-                    wrongUsername = 0
-                    if password.lowercased() = "abc123" {
-                        wrongPassword = 0
-                        showingLoginScreen = true
-                    } else {
-                        wrongPassword = 2
-                    }
-                } else {
-                    wrongUsername = 2
-                    
-                }
-            }
+            
+            
             
             Spacer()
-                }
-                .padding(0.0)
-                .navigationBarTitle("Eventplaner")
-                
+        }
+        .padding(0.0)
+        .navigationBarTitle("Eventplaner")
+        
+    }
+    func autheticateUser(username: String, password: String) {
+        if username.lowercased() == "aileen0804" {
+            wrongUsername = 0
+            if password.lowercased() == "abc123" {
+                wrongPassword = 0
+                showingLoginScreen = true
+            } else {
+                wrongPassword = 2
             }
+        } else {
+            wrongUsername = 2
             
-            }
-            //Hier muss der Array mit den Events herrein mit hilfe von foreech
-            
-         //   ForEach((eventArray.indices) ?? (0..<10)){
-//          ForEach((eventArray.indices) ?? (0..<10)){
-         //       index in
-           //     NavigationLink(destination: EventInfoView()) {
-           //     Label("Event", systemImage: "calendar")
-                        
-                    
-                
-                
+        }
+    }
+}
+//Hier muss der Array mit den Events herrein mit hilfe von foreech
 
-             //   }
-    
+
+
+
+//   }
+
 
 
 
