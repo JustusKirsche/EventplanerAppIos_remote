@@ -28,44 +28,58 @@
 // }
 // }
 // }
- 
- 
- 
- struct ContentView_Previews: PreviewProvider {
- static var previews: some View {
- ContentView()
- }
- }
- 
+
+
+
+
+
 import SwiftUI
 import UIKit
 
 
 struct ContentView: View {
-    //  @StateObject var data: EventData
-//    eventArray.append(<#T##Element#>)
+    
+    //    eventArray.append(<#T##Element#>)
+    @State private var eventArray = [Event]()
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-            Text("Your Events")
-                .padding(.all)
-            
-            //Hier muss der Array mit den Events herrein mit hilfe von foreech
-            
-            ForEach((eventArray.indices) ?? (0..<10)){
-//          ForEach((eventArray.indices) ?? (0..<10)){
-                index in
-                NavigationLink(destination: EventInfoView()) {
-                Label("Event", systemImage: "calendar")
-                        
-                    
+        NavigationView{
+            VStack {
+                Image(systemName: "globe")
+                    .imageScale(.large)
+                Text("Your Events")
+                    .padding(.all)
                 
+                //Hier muss der Array mit den Events herrein mit hilfe von foreech
                 
-
+                List{
+                    ForEach(eventArray){ event in
+                        let index = eventArray.firstIndex(where: {$0.id == event.id})
+                        NavigationLink(
+                            "\(event.name)",
+                            destination: EventInfoView(
+                                //                            state: createState(index: index!)
+                            )
+                            //                        eventArray: $eventArray,
+                            //                        index: index ?? 0
+                            //                        edit: true
+                        )
+                    }
                 }
-                .foregroundColor(/*@START_MENU_TOKEN@*/.gray/*@END_MENU_TOKEN@*/)
+                .navigationTitle("Event List")
+                .toolbar{
+                    NavigationLink(
+                        destination: CreateEventView(
+                            state : CreateEventViewState(),
+                            eventArray: $eventArray,
+                            index: 0
+                        )
+                        .navigationTitle("Create a Car"),
+                        label: {
+                            Image(systemName: "plus")
+                        })
+                }
             }
+            .foregroundColor(/*@START_MENU_TOKEN@*/.gray/*@END_MENU_TOKEN@*/)
         }
     }
 }

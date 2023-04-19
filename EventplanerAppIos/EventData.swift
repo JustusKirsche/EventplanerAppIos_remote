@@ -6,25 +6,35 @@
 //
 
 import Foundation
-class eventClass: ObservableObject{
-    @Published var name: String = ""
-    @Published var description: String = ""
-    @Published var location: String = ""
-    @Published var date: String = ""
-    @Published var conact: String = ""
+import SwiftUI
+
+struct Event: Identifiable{
+    @State var id = UUID()
     
-    @Published var costs: Int = 0
-    @Published var maxParticipant: Int = 0
-    @Published var minAge: Int = 0
+    @State  var name: String
+    @State  var description: String
+    @State var location: String
+    @State  var date: String
+    @State  var contact: String
     
-    @Published var participants: Array<participantClass> = []
+    @State  var costs: Int
+    @State   var maxParticipant: Int
+    @State  var minAge: Int
+    
+    //    kommt noch
+    //    var participants: Array<participantClass> = []
     
 }
-class eventArrayClass: ObservableObject {
-    @Published var eventArray: Array<eventClass> = []
+struct eventArrayStruct: Identifiable {
+    var id: UUID
+    
+    @State var eventArray = [Event]()
 }
-class participantClass: ObservableObject{
-    let name: String = ""
-    let age: Int = 0
-    var joynd: Bool = false
+
+struct participantClass: Identifiable{
+    var id = UUID()
+    
+    let name: String
+    let age: Int
+    var joynd: Bool
 }
