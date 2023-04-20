@@ -31,8 +31,48 @@ struct ContentView: View {
                 //                Home Tab
                 //                Hier kommt Justus View rein
                 
-                Text("Sign in")
-                Text("Hello was geht ab")
+                VStack {
+                                Image(systemName: "globe")
+                                    .foregroundColor(.green)
+                                    .scaleEffect(2)
+                                    .rotationEffect(.degrees(15))
+                                    .imageScale(.large)
+                                Text("Your Events")
+                                    .font(.largeTitle)
+                                    .padding(.all)
+                                
+                                //Hier muss der Array mit den Events herrein mit hilfe von foreech
+                                
+                                List{
+                                    ForEach(eventArray){ event in
+                //                        ist vom alten code kann noch nützlich sein
+                //                        let index = eventArray.firstIndex(where: {$0.id == event.id})
+                                        NavigationLink(
+                                            "\(event.name)",
+                                            destination: EventInfoView(
+                                                state : CreateEventViewState(),
+                                                eventArray: $eventArray,
+                                                index: 0
+                                            )
+                                        )
+                                    }
+                                }
+                                .navigationTitle("Event List")
+                                .toolbar{
+                                    NavigationLink(
+                                        destination: CreateEventView(
+                                            state : CreateEventViewState(),
+                                            eventArray: $eventArray,
+                                            index: 0
+                                        )
+                                        .navigationTitle("Create a Event"),
+                                        label: {
+                                            Image(systemName: "plus")
+                                        })
+                                    .foregroundColor(.blue)
+                                }
+                            }
+                            .foregroundColor(.black)
             } else if tabIndex == 2 {
                 //                Sing in Tab
                 Text("Sign in")
