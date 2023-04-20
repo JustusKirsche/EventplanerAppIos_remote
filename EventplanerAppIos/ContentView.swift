@@ -86,10 +86,10 @@ struct ContentView: View {
                     
                 }
                 
-            } else if tabIndex == 4 {
+            } else if tabIndex == 3 {
                 //                Settings Tab
                 Text("Settings")
-            } else if tabIndex == 2 {
+            } else if tabIndex == 1 {
                 //                New Event Tab
                 
                 NavigationView{
