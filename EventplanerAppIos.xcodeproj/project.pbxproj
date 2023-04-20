@@ -20,6 +20,7 @@
 		56D047CA29ED353100B226F6 /* EventInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D047C829ED353100B226F6 /* EventInfoView.swift */; };
 		56D047D529F120AF00B226F6 /* CreateEventState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D047D429F120AF00B226F6 /* CreateEventState.swift */; };
 		56D047D729F121AB00B226F6 /* CreateEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D047D629F121AB00B226F6 /* CreateEventView.swift */; };
+
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		56D047C829ED353100B226F6 /* EventInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventInfoView.swift; sourceTree = "<group>"; };
 		56D047D429F120AF00B226F6 /* CreateEventState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEventState.swift; sourceTree = "<group>"; };
 		56D047D629F121AB00B226F6 /* CreateEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEventView.swift; sourceTree = "<group>"; };
+
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,8 +113,10 @@
 				56D047A229ED213A00B226F6 /* Preview Content */,
 				56D047C629ED21D200B226F6 /* EventData.swift */,
 				56D047C829ED353100B226F6 /* EventInfoView.swift */,
+
 				56D047D629F121AB00B226F6 /* CreateEventView.swift */,
 				56D047D429F120AF00B226F6 /* CreateEventState.swift */,
+
 			);
 			path = EventplanerAppIos;
 			sourceTree = "<group>";
@@ -280,8 +284,10 @@
 			files = (
 				56D047C929ED353100B226F6 /* EventInfoView.swift in Sources */,
 				56D0479F29ED213A00B226F6 /* ContentView.swift in Sources */,
+				56D047CF29EFCC3500B226F6 /* CreateEventView.swift in Sources */,
 				56D0479D29ED213A00B226F6 /* EventplanerAppIosApp.swift in Sources */,
 				56D047D729F121AB00B226F6 /* CreateEventView.swift in Sources */,
+
 				56D047C729ED21D200B226F6 /* EventData.swift in Sources */,
 				56D047D529F120AF00B226F6 /* CreateEventState.swift in Sources */,
 			);
@@ -291,6 +297,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56D047D329EFCC8A00B226F6 /* CreateEventState.swift in Sources */,
+				56D047D029EFCC3500B226F6 /* CreateEventView.swift in Sources */,
 				56D047CA29ED353100B226F6 /* EventInfoView.swift in Sources */,
 				56D047AE29ED213B00B226F6 /* EventplanerAppIosTests.swift in Sources */,
 			);

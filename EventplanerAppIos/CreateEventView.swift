@@ -4,6 +4,7 @@
 //
 //  Created by Kirschenstein, Justus (SE-5/5AFI1A) on 19.04.23.
 //
+
 import SwiftUI
 import Foundation
 
@@ -16,7 +17,7 @@ struct CreateEventView: View {
     @State var index:Int
     
     var body: some View {
-        
+
         VStack{
             Text("Name: ")
                 .font(.headline)
@@ -90,6 +91,7 @@ struct CreateEventView: View {
             }
             
         }
+
     }
 }
 struct CreateEventView_Previews: PreviewProvider {
