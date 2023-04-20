@@ -17,8 +17,8 @@ struct ContentView: View {
     @State private var wrongPassword = 0
     @State private var showingLoginScreen = false
     @State private var tabIndex = 0
-    //  @StateObject var data: EventData
-    //    eventArray.append(<#T##Element#>)
+    @State private var eventArray = [Event]()
+    
     var body: some View {
         VStack {
             SlidingTabView(selection: $tabIndex,
@@ -28,13 +28,13 @@ struct ContentView: View {
                            selectionBarColor: .gray)
             Spacer()
             if tabIndex == 0 {
-//                Home Tab
-//                Hier kommt Justus View rein
+                //                Home Tab
+                //                Hier kommt Justus View rein
                 
                 Text("Sign in")
                 Text("Hello was geht ab")
             } else if tabIndex == 2 {
-//                Sing in Tab
+                //                Sing in Tab
                 Text("Sign in")
                     .font(.headline)
                 NavigationView{
@@ -76,7 +76,7 @@ struct ContentView: View {
                             .background(Color.blue)
                             .cornerRadius(10)
                             
-                            NavigationLink(destination: Text("You are logged in @/(username)"), isActive: $showingLoginScreen) {
+                            NavigationLink(destination: Text("You are logged in @\(username)"), isActive: $showingLoginScreen) {
                                 EmptyView()
                             }
                         }
@@ -87,18 +87,27 @@ struct ContentView: View {
                 }
                 
             } else if tabIndex == 4 {
-//                Settings Tab
+                //                Settings Tab
                 Text("Settings")
             } else if tabIndex == 2 {
-//                New Event Tab
-                NavigationLink(
-                    "\(event.name)",
-                    destination: EventInfoView(
-                        state : CreateEventViewState(),
-                        eventArray: $eventArray,
-                        index: 0
-                    )
-                )
+                //                New Event Tab
+                
+                NavigationView{
+                    VStack{
+                        Text("Create neu Event")
+                        NavigationLink(
+                            destination: CreateEventView(
+                                state : CreateEventViewState(),
+                                eventArray: $eventArray,
+                                index: 0
+                            )
+                            .navigationTitle("Create a Event"),
+                            label: {
+                                Image(systemName: "plus")
+                            }
+                        )
+                    }
+                }
             }
             
             
