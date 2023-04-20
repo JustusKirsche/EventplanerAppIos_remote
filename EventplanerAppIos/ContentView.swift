@@ -41,35 +41,17 @@ struct ContentView: View {
                                     .font(.largeTitle)
                                     .padding(.all)
                                 
-                                //Hier muss der Array mit den Events herrein mit hilfe von foreech
-                                
                                 List{
                                     ForEach(eventArray){ event in
-                //                        ist vom alten code kann noch nützlich sein
-                //                        let index = eventArray.firstIndex(where: {$0.id == event.id})
                                         NavigationLink(
                                             "\(event.name)",
                                             destination: EventInfoView(
-                                                state : CreateEventViewState(),
+                                                state: CreateEventViewState(),
                                                 eventArray: $eventArray,
-                                                index: 0
-                                            )
+                                                index: 0)
                                         )
                                     }
-                                }
-                                .navigationTitle("Event List")
-                                .toolbar{
-                                    NavigationLink(
-                                        destination: CreateEventView(
-                                            state : CreateEventViewState(),
-                                            eventArray: $eventArray,
-                                            index: 0
-                                        )
-                                        .navigationTitle("Create a Event"),
-                                        label: {
-                                            Image(systemName: "plus")
-                                        })
-                                    .foregroundColor(.blue)
+                                    .navigationTitle("Event List")
                                 }
                             }
                             .foregroundColor(.black)
