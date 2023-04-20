@@ -5,34 +5,6 @@
 //  Created by Kirschenstein, Justus (SE-5/5AFI1A) on 17.04.23.
 //
 
-// import SwiftUI
-//
-//
-// struct ContentView: View {
-// @StateObject var data: EventData()
-// @StateObject var data: EventInfoView
-// var events = ["Event 1", "Event 2", "Event 3"] // Array mit Events
-// var body: some View {
-// VStack {
-// Image(systemName: "globe")
-// .imageScale(.large)
-// Text("Your Events")
-// .padding(.all)
-// List {
-// ForEach(self.events, id: uni.self) { event in // Schleife zur Erstellung von Listenelementen für jedes Event
-// NavigationLink(destination: EventInfoView(event: event)) {
-// Text(event)
-// }
-// }
-// }
-// }
-// }
-// }
-
-
-
-
-
 import SwiftUI
 import UIKit
 import SlidingTabView
@@ -50,15 +22,19 @@ struct ContentView: View {
     var body: some View {
         VStack {
             SlidingTabView(selection: $tabIndex,
-                           tabs: ["Home", "Sign in", "Settings"],
+                           tabs: ["Home", "New Event", "Sign in","Settings"],
                            animation: .easeInOut,
                            activeAccentColor: .green,
-                           selectionBarColor: .green)
+                           selectionBarColor: .gray)
             Spacer()
             if tabIndex == 0 {
+//                Home Tab
+//                Hier kommt Justus View rein
+                
                 Text("Sign in")
                 Text("Hello was geht ab")
-            } else if tabIndex == 1 {
+            } else if tabIndex == 2 {
+//                Sing in Tab
                 Text("Sign in")
                     .font(.headline)
                 NavigationView{
@@ -110,8 +86,12 @@ struct ContentView: View {
                     
                 }
                 
-            } else if tabIndex == 2 {
+            } else if tabIndex == 4 {
+//                Settings Tab
                 Text("Settings")
+            } else if tabIndex == 2 {
+//                New Event Tab
+                
             }
             
             
