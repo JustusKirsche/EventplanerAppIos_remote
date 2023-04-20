@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		566EBF9C29EFCA350053AC3E /* SlidingTabView in Frameworks */ = {isa = PBXBuildFile; productRef = 566EBF9B29EFCA350053AC3E /* SlidingTabView */; };
 		56D0479D29ED213A00B226F6 /* EventplanerAppIosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D0479C29ED213A00B226F6 /* EventplanerAppIosApp.swift */; };
 		56D0479F29ED213A00B226F6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D0479E29ED213A00B226F6 /* ContentView.swift */; };
 		56D047A129ED213A00B226F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56D047A029ED213A00B226F6 /* Assets.xcassets */; };
@@ -17,10 +18,9 @@
 		56D047C729ED21D200B226F6 /* EventData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D047C629ED21D200B226F6 /* EventData.swift */; };
 		56D047C929ED353100B226F6 /* EventInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D047C829ED353100B226F6 /* EventInfoView.swift */; };
 		56D047CA29ED353100B226F6 /* EventInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D047C829ED353100B226F6 /* EventInfoView.swift */; };
-		56D047CF29EFCC3500B226F6 /* CreateEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D047CE29EFCC3500B226F6 /* CreateEventView.swift */; };
-		56D047D029EFCC3500B226F6 /* CreateEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D047CE29EFCC3500B226F6 /* CreateEventView.swift */; };
-		56D047D229EFCC8A00B226F6 /* CreateEventState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D047D129EFCC8A00B226F6 /* CreateEventState.swift */; };
-		56D047D329EFCC8A00B226F6 /* CreateEventState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D047D129EFCC8A00B226F6 /* CreateEventState.swift */; };
+		56D047D529F120AF00B226F6 /* CreateEventState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D047D429F120AF00B226F6 /* CreateEventState.swift */; };
+		56D047D729F121AB00B226F6 /* CreateEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D047D629F121AB00B226F6 /* CreateEventView.swift */; };
+
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,8 +53,9 @@
 		56D047B929ED213B00B226F6 /* EventplanerAppIosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventplanerAppIosUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		56D047C629ED21D200B226F6 /* EventData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventData.swift; sourceTree = "<group>"; };
 		56D047C829ED353100B226F6 /* EventInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventInfoView.swift; sourceTree = "<group>"; };
-		56D047CE29EFCC3500B226F6 /* CreateEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEventView.swift; sourceTree = "<group>"; };
-		56D047D129EFCC8A00B226F6 /* CreateEventState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEventState.swift; sourceTree = "<group>"; };
+		56D047D429F120AF00B226F6 /* CreateEventState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEventState.swift; sourceTree = "<group>"; };
+		56D047D629F121AB00B226F6 /* CreateEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEventView.swift; sourceTree = "<group>"; };
+
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				566EBF9C29EFCA350053AC3E /* SlidingTabView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,8 +113,10 @@
 				56D047A229ED213A00B226F6 /* Preview Content */,
 				56D047C629ED21D200B226F6 /* EventData.swift */,
 				56D047C829ED353100B226F6 /* EventInfoView.swift */,
-				56D047CE29EFCC3500B226F6 /* CreateEventView.swift */,
-				56D047D129EFCC8A00B226F6 /* CreateEventState.swift */,
+
+				56D047D629F121AB00B226F6 /* CreateEventView.swift */,
+				56D047D429F120AF00B226F6 /* CreateEventState.swift */,
+
 			);
 			path = EventplanerAppIos;
 			sourceTree = "<group>";
@@ -158,6 +162,9 @@
 			dependencies = (
 			);
 			name = EventplanerAppIos;
+			packageProductDependencies = (
+				566EBF9B29EFCA350053AC3E /* SlidingTabView */,
+			);
 			productName = EventplanerAppIos;
 			productReference = 56D0479929ED213A00B226F6 /* EventplanerAppIos.app */;
 			productType = "com.apple.product-type.application";
@@ -230,6 +237,9 @@
 				Base,
 			);
 			mainGroup = 56D0479029ED213A00B226F6;
+			packageReferences = (
+				566EBF9A29EFCA350053AC3E /* XCRemoteSwiftPackageReference "SlidingTabView" */,
+			);
 			productRefGroup = 56D0479A29ED213A00B226F6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -276,8 +286,10 @@
 				56D0479F29ED213A00B226F6 /* ContentView.swift in Sources */,
 				56D047CF29EFCC3500B226F6 /* CreateEventView.swift in Sources */,
 				56D0479D29ED213A00B226F6 /* EventplanerAppIosApp.swift in Sources */,
-				56D047D229EFCC8A00B226F6 /* CreateEventState.swift in Sources */,
+				56D047D729F121AB00B226F6 /* CreateEventView.swift in Sources */,
+
 				56D047C729ED21D200B226F6 /* EventData.swift in Sources */,
+				56D047D529F120AF00B226F6 /* CreateEventState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -599,6 +611,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		566EBF9A29EFCA350053AC3E /* XCRemoteSwiftPackageReference "SlidingTabView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/QuynhNguyen/SlidingTabView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		566EBF9B29EFCA350053AC3E /* SlidingTabView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 566EBF9A29EFCA350053AC3E /* XCRemoteSwiftPackageReference "SlidingTabView" */;
+			productName = SlidingTabView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 56D0479129ED213A00B226F6 /* Project object */;
 }
