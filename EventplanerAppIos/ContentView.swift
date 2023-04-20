@@ -91,7 +91,14 @@ struct ContentView: View {
                 Text("Settings")
             } else if tabIndex == 2 {
 //                New Event Tab
-                
+                NavigationLink(
+                    "\(event.name)",
+                    destination: EventInfoView(
+                        state : CreateEventViewState(),
+                        eventArray: $eventArray,
+                        index: 0
+                    )
+                )
             }
             
             
