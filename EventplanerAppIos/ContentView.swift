@@ -117,7 +117,11 @@ struct ContentView: View {
                 
                 NavigationView{
                     VStack{
-                        Text("Create new Event")
+                        Text("To create a new event\n press the plus below")
+                            .font(.largeTitle)
+                            .multilineTextAlignment(.center)
+                            .padding()
+                            .foregroundColor(.green)
                         NavigationLink(
                             destination: CreateEventView(
                                 state : CreateEventViewState(),
@@ -127,7 +131,10 @@ struct ContentView: View {
                             .navigationTitle("Create a Event"),
                             label: {
                                 Image(systemName: "plus")
+                                    .padding()
+                                    .scaleEffect(2)
                             }
+                                 
                         )
                     }
                 }
@@ -169,10 +176,8 @@ struct ContentView: View {
 
 
 struct ContentView_Previews: PreviewProvider {
-    
     static var previews: some View {
         ContentView()
-        
     }
 }
 
