@@ -21,32 +21,36 @@ struct CreateEventView: View {
     var body: some View {
         
         VStack{
-            
-            
+            Text("New Event")
+                .font(.largeTitle)
             TextField("Name:", text: $state.name) // Hier wird das Binding verwendet
-                .padding(.leading)
+                .padding()
+                .font(.headline)
             
             TextField("Location:", text: $state.location) // Hier wird das Binding verwendet
-                .padding(.leading)
-            
+                .padding()
+                .font(.headline)
             TextField("Date:", text: $state.date) // Hier wird das Binding verwendet
-                .padding(.leading)
-            
+                .padding()
+                .font(.headline)
             TextField("Contact:", text: $state.contact) // Hier wird das Binding verwendet
-                .padding(.leading)
-            
+                .padding()
+                .font(.headline)
             TextField("Costs:", text: $state.costsString) // Hier wird das Binding verwendet
-                .padding(.leading)
-            
+                .padding()
+                .font(.headline)
             TextField("Max participants:", text: $state.maxParticipantString) // Hier wird das Binding verwendet
-                .padding(.leading)
-            
-            TextField("Min Age:", text: $state.minAgeString) // Hier wird das Binding verwendet
-                .padding(.leading)
-            
+                .padding()
+                .font(.headline)
+            TextField("Min age:", text: $state.minAgeString) // Hier wird das Binding verwendet
+                .padding()
+                .font(.headline)
             Button("Save") {
                 saveButtonPressed()
-            } .alert("Your event ist safed", isPresented: $SafeIsVisible) {
+            }
+            .padding()
+            .font(.title)
+            .alert("Your event is saved", isPresented: $SafeIsVisible) {
                 Button("Ok") {
                     self.SafeIsVisible = false
                 }
