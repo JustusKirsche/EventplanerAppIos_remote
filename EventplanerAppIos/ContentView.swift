@@ -42,6 +42,12 @@ struct ContentView: View {
                             .font(.largeTitle)
                             .padding(.all)
                         
+                        Image("image1")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 300, height: 300)
+                            .cornerRadius(CGFloat(150))
+                        
                         List{
                             ForEach(eventArray){ event in
                                 NavigationLink(
@@ -52,7 +58,7 @@ struct ContentView: View {
                                         index: 0)
                                 )
                             }
-                            .navigationTitle("Event List")
+                            //.navigationTitle("Event List")
                         }
                     }
                 }
@@ -72,6 +78,11 @@ struct ContentView: View {
                             .foregroundColor(.white)
                         
                         VStack{
+                            Image("image2")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 150, height: 150)
+                                .cornerRadius(CGFloat(100))
                             Text("Login")
                                 .font(.largeTitle)
                                 .bold()
@@ -112,6 +123,17 @@ struct ContentView: View {
             } else if tabIndex == 3 {
                 //                Settings Tab
                 Text("Settings")
+                    .font(.headline)
+                    .multilineTextAlignment(.center)
+                    .padding(.all)
+                Image("image3")
+                    .resizable()
+                    .padding(.top)
+                    .scaledToFit()
+                    .frame(width: 200, height: 200)
+                    .cornerRadius(CGFloat(150))
+    
+                
             } else if tabIndex == 1 {
                 //                New Event Tab
                 
