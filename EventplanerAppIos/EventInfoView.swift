@@ -16,16 +16,12 @@ struct EventInfoView: View {
         VStack{
             List{
                 Text("Name: \(eventArray [index].name)")
-                
                 Text("Date: \(eventArray [index].date)")
-                
                 Text("Description: \(eventArray [index].description)")
-                
                 Text("Location: \(eventArray [index].location)")
-                
                 Text("Contact: \(eventArray [index].contact)")
-                Text("Cost: \(eventArray [index].costs)")
-                Text("Max paticipant: \(eventArray [index].maxParticipant)")
+                Text("Costs: \(eventArray [index].costs)")
+                Text("Max participant: \(eventArray [index].maxParticipant)")
                 Text("Min Age: \(eventArray [index].minAge)")
             }
         }
@@ -42,13 +38,13 @@ struct EventInfoView: View {
 }
 
 
-struct EventInfoView_Previews: PreviewProvider {
-    @State private static var eventArray = [Event]()
-    static var previews: some View {
-        EventInfoView(
-            state: CreateEventViewState(),
-            eventArray: $eventArray,
-            index: 0
-        )
-    }
-}
+//struct EventInfoView_Previews: PreviewProvider {
+//    @State private static var eventArray = [Event]()
+//    static var previews: some View {
+//        EventInfoView(
+//            state: CreateEventViewState(),
+//            eventArray: $eventArray,
+//            index: 0
+//        )
+//    }
+//}

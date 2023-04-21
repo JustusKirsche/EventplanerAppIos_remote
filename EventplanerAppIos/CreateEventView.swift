@@ -21,37 +21,36 @@ struct CreateEventView: View {
     var body: some View {
         
         VStack{
-            Text("Name: ")
-                .font(.headline)
+            Text("New Event")
+                .font(.largeTitle)
+            TextField("Name:", text: $state.name) // Hier wird das Binding verwendet
                 .padding()
-            
-            TextField("Eingabe", text: $state.name) // Hier wird das Binding verwendet
-                .padding(.leading)
-            
-            Text("Locatin: ")
                 .font(.headline)
+            
+            TextField("Location:", text: $state.location) // Hier wird das Binding verwendet
                 .padding()
-            
-            TextField("Eingabe", text: $state.description) // Hier wird das Binding verwendet
-                .padding(.leading)
-            
-            Text("Date: ")
                 .font(.headline)
+            TextField("Date:", text: $state.date) // Hier wird das Binding verwendet
                 .padding()
-            
-            TextField("Eingabe", text: $state.location) // Hier wird das Binding verwendet
-                .padding(.leading)
-            
-            Text("Contact: ")
                 .font(.headline)
+            TextField("Contact:", text: $state.contact) // Hier wird das Binding verwendet
                 .padding()
-            
-            TextField("Eingabe", text: $state.contact) // Hier wird das Binding verwendet
-                .padding(.leading)
-            
+                .font(.headline)
+            TextField("Costs:", text: $state.costsString) // Hier wird das Binding verwendet
+                .padding()
+                .font(.headline)
+            TextField("Max participants:", text: $state.maxParticipantString) // Hier wird das Binding verwendet
+                .padding()
+                .font(.headline)
+            TextField("Min age:", text: $state.minAgeString) // Hier wird das Binding verwendet
+                .padding()
+                .font(.headline)
             Button("Save") {
                 saveButtonPressed()
-            } .alert("Your event ist safed", isPresented: $SafeIsVisible) {
+            }
+            .padding()
+            .font(.title)
+            .alert("Your event is saved", isPresented: $SafeIsVisible) {
                 Button("Ok") {
                     self.SafeIsVisible = false
                 }

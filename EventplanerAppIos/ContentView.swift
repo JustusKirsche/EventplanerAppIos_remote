@@ -18,11 +18,24 @@ struct ContentView: View {
     @State private var showingLoginScreen = false
     @State private var tabIndex = 0
     @State private var eventArray = [Event]()
+    @State private var darkMode = false
+    
+    func darkModeFunc(_ isOn: Bool){
+        if #available (iOS 13.0, *){
+            let appDelegate = UIApplication.shared.windows.first
+            return
+            if (isOn){
+                appDelegate?.overrideUserInterfaceStyle = .dark
+            }
+                appDelegate?.overrideUserInterfaceStyle = .light
+            return
+        }
+    }
     
     var body: some View {
         VStack {
             SlidingTabView(selection: $tabIndex,
-                           tabs: ["Home", "New Event", "Sign in","Settings"],
+                           tabs: ["Home", "New event", "Sign in","Settings"],
                            animation: .easeInOut,
                            activeAccentColor: .green,
                            selectionBarColor: .gray)
@@ -38,7 +51,7 @@ struct ContentView: View {
                             .rotationEffect(.degrees(15))
                             .imageScale(.large)
                             .padding([.top, .leading, .trailing])
-                        Text("Your Events")
+                        Text("Your events")
                             .font(.largeTitle)
                             .padding(.all)
                         
@@ -59,6 +72,7 @@ struct ContentView: View {
                                 )
                             }
                             //.navigationTitle("Event List")
+
                         }
                     }
                 }
@@ -122,24 +136,32 @@ struct ContentView: View {
                 
             } else if tabIndex == 3 {
                 //                Settings Tab
-                Text("Settings")
-                    .font(.headline)
-                    .multilineTextAlignment(.center)
-                    .padding(.all)
-                Image("image3")
-                    .resizable()
-                    .padding(.top)
-                    .scaledToFit()
-                    .frame(width: 200, height: 200)
-                    .cornerRadius(CGFloat(150))
-    
-                
+                VStack{
+                  Text("Settings")
+                      .font(.headline)
+                      .multilineTextAlignment(.center)
+                      .padding(.all)
+                  Image("image3")
+                      .resizable()
+                      .padding(.top)
+                      .scaledToFit()
+                      .frame(width: 200, height: 200)
+                      .cornerRadius(CGFloat(150))
+                      Toggle("Darkmode", isOn: $darkMode)
+                    
+                 }.padding()
+
             } else if tabIndex == 1 {
                 //                New Event Tab
                 
                 NavigationView{
                     VStack{
-                        Text("Create new Event")
+
+                        Text("To create a new event\n press the plus below")
+                            .font(.largeTitle)
+                            .multilineTextAlignment(.center)
+                            .padding()
+                            .foregroundColor(.green)
                         NavigationLink(
                             destination: CreateEventView(
                                 state : CreateEventViewState(),
@@ -149,7 +171,10 @@ struct ContentView: View {
                             .navigationTitle("Create a Event"),
                             label: {
                                 Image(systemName: "plus")
+                                    .padding()
+                                    .scaleEffect(2)
                             }
+                                 
                         )
                     }
                 }
@@ -178,6 +203,7 @@ struct ContentView: View {
             
         }
     }
+    
 }
 //Hier muss der Array mit den Events herrein mit hilfe von foreech
 
@@ -191,10 +217,8 @@ struct ContentView: View {
 
 
 struct ContentView_Previews: PreviewProvider {
-    
     static var previews: some View {
         ContentView()
-        
     }
 }
 
