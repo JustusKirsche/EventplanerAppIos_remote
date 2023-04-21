@@ -139,24 +139,28 @@ struct ContentView: View {
                 
             } else if tabIndex == 3 {
                 //                Settings Tab
-                VStack{
-                  Text("Settings")
-                      .font(.headline)
-                      .multilineTextAlignment(.center)
-                      .padding(.all)
-                  Image("image3")
-                      .resizable()
-                      .padding(.top)
-                      .scaledToFit()
-                      .frame(width: 200, height: 200)
-                      .cornerRadius(CGFloat(150))
-                    Toggle("Darkmode", isOn: $darkMode)
-                    Toggle("Notification", isOn: $darkMode1)
-                    Toggle("Energysaver", isOn: $darkMode2)
-                    Toggle("Sound", isOn: $darkMode3)
-                    
-                 }.padding()
-
+                NavigationView{
+                    VStack{
+                        Text("Settings")
+                            .font(.headline)
+                            .multilineTextAlignment(.center)
+                            .padding([.leading, .bottom, .trailing])
+                        
+                        
+                        Image("image3")
+                            .resizable()
+                            .padding(.top)
+                            .scaledToFit()
+                            .frame(width: 200, height: 200)
+                            .cornerRadius(CGFloat(150))
+                        
+                        Toggle("Darkmode", isOn: $darkMode)
+                        Toggle("Notification", isOn: $darkMode1)
+                        Toggle("Energysaver", isOn: $darkMode2)
+                        Toggle("Sound", isOn: $darkMode3)
+                        
+                    }.padding()
+                }
             } else if tabIndex == 1 {
                 //                New Event Tab
                 
