@@ -72,7 +72,7 @@ struct CreateEventView: View {
                 description: "Test event",
                 location: "Wolfsburg",
                 date: "12.01.2099",
-                contact: "Jon Hammer",
+                contact: "John Hammer",
                 costs: 15,
                 maxParticipant: 20,
                 minAge: 18
