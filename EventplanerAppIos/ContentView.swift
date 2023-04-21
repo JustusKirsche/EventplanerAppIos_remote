@@ -152,7 +152,7 @@ struct ContentView: View {
                       .cornerRadius(CGFloat(150))
                     Toggle("Darkmode", isOn: $darkMode)
                     Toggle("Notification", isOn: $darkMode1)
-                    Toggle("Energesaver", isOn: $darkMode2)
+                    Toggle("Energysaver", isOn: $darkMode2)
                     Toggle("Sound", isOn: $darkMode3)
                     
                  }.padding()
@@ -174,7 +174,7 @@ struct ContentView: View {
                                 eventArray: $eventArray,
                                 index: 0
                             )
-                            .navigationTitle("Create a Event"),
+                            .navigationTitle("Create an event"),
                             label: {
                                 Image(systemName: "plus")
                                     .padding()

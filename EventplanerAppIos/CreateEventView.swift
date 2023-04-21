@@ -21,7 +21,7 @@ struct CreateEventView: View {
     var body: some View {
         
         VStack{
-            Text("New Event")
+            Text("New event")
                 .font(.largeTitle)
             TextField("Name:", text: $state.name) // Hier wird das Binding verwendet
                 .padding()
