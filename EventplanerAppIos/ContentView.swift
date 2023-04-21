@@ -166,6 +166,11 @@ struct ContentView: View {
                 
                 NavigationView{
                     VStack{
+                        Image("image4")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 300, height: 300)
+                            .cornerRadius(200)
 
                         Text("To create a new event\n press the plus below")
                             .font(.largeTitle)
