@@ -13,31 +13,20 @@ struct EventInfoView: View {
     @State var index:Int
     
     var body: some View {
-        ScrollView{
-            
+        VStack{
             List{
-                Text("Name")
-                Text("\(eventArray [index].name)")
-                Text("Date")
-                Text("\(eventArray [index].date)")
-                Text("Description")
-                Text("\(eventArray [index].description)")
-                Text("Location")
-                Text("\(eventArray [index].location)")
-                Text("Contact")
-                Text("\(eventArray [index].contact)")
-            }
-            List {
-                Text("Name")
-                Text("\(eventArray [index].name)")
-                Text("Date")
-                Text("\(eventArray [index].date)")
-                Text("Description")
-                Text("\(eventArray [index].description)")
-                Text("Location")
-                Text("\(eventArray [index].location)")
-                Text("Contact")
-                Text("\(eventArray [index].contact)")
+                Text("Name: \(eventArray [index].name)")
+                
+                Text("Date: \(eventArray [index].date)")
+                
+                Text("Description: \(eventArray [index].description)")
+                
+                Text("Location: \(eventArray [index].location)")
+                
+                Text("Contact: \(eventArray [index].contact)")
+                Text("Cost: \(eventArray [index].costs)")
+                Text("Max paticipant: \(eventArray [index].maxParticipant)")
+                Text("Min Age: \(eventArray [index].minAge)")
             }
         }
     }
