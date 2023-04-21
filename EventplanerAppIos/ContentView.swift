@@ -19,6 +19,9 @@ struct ContentView: View {
     @State private var tabIndex = 0
     @State private var eventArray = [Event]()
     @State private var darkMode = false
+    @State private var darkMode1 = true
+    @State private var darkMode2 = false
+    @State private var darkMode3 = false
     
     func darkModeFunc(_ isOn: Bool){
         if #available (iOS 13.0, *){
@@ -148,9 +151,9 @@ struct ContentView: View {
                       .frame(width: 200, height: 200)
                       .cornerRadius(CGFloat(150))
                     Toggle("Darkmode", isOn: $darkMode)
-                    Toggle("Notification", isOn: $darkMode)
-                    Toggle("Energesaver", isOn: $darkMode)
-                    Toggle("Sound", isOn: $darkMode)
+                    Toggle("Notification", isOn: $darkMode1)
+                    Toggle("Energesaver", isOn: $darkMode2)
+                    Toggle("Sound", isOn: $darkMode3)
                     
                  }.padding()
 
