@@ -117,7 +117,7 @@ struct ContentView: View {
                 
                 NavigationView{
                     VStack{
-                        Text("Create neu Event")
+                        Text("Create new Event")
                         NavigationLink(
                             destination: CreateEventView(
                                 state : CreateEventViewState(),
