@@ -147,7 +147,10 @@ struct ContentView: View {
                       .scaledToFit()
                       .frame(width: 200, height: 200)
                       .cornerRadius(CGFloat(150))
-                      Toggle("Darkmode", isOn: $darkMode)
+                    Toggle("Darkmode", isOn: $darkMode)
+                    Toggle("Notification", isOn: $darkMode)
+                    Toggle("Energesaver", isOn: $darkMode)
+                    Toggle("Sound", isOn: $darkMode)
                     
                  }.padding()
 
