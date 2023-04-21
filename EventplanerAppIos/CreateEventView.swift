@@ -21,32 +21,27 @@ struct CreateEventView: View {
     var body: some View {
         
         VStack{
-            Text("Name: ")
-                .font(.headline)
-                .padding()
             
-            TextField("Eingabe", text: $state.name) // Hier wird das Binding verwendet
+            
+            TextField("Name:", text: $state.name) // Hier wird das Binding verwendet
                 .padding(.leading)
             
-            Text("Locatin: ")
-                .font(.headline)
-                .padding()
-            
-            TextField("Eingabe", text: $state.description) // Hier wird das Binding verwendet
+            TextField("Location:", text: $state.location) // Hier wird das Binding verwendet
                 .padding(.leading)
             
-            Text("Date: ")
-                .font(.headline)
-                .padding()
-            
-            TextField("Eingabe", text: $state.location) // Hier wird das Binding verwendet
+            TextField("Date:", text: $state.date) // Hier wird das Binding verwendet
                 .padding(.leading)
             
-            Text("Contact: ")
-                .font(.headline)
-                .padding()
+            TextField("Contact:", text: $state.contact) // Hier wird das Binding verwendet
+                .padding(.leading)
             
-            TextField("Eingabe", text: $state.contact) // Hier wird das Binding verwendet
+            TextField("Costs:", text: $state.costsString) // Hier wird das Binding verwendet
+                .padding(.leading)
+            
+            TextField("Max participants:", text: $state.maxParticipantString) // Hier wird das Binding verwendet
+                .padding(.leading)
+            
+            TextField("Min Age:", text: $state.minAgeString) // Hier wird das Binding verwendet
                 .padding(.leading)
             
             Button("Save") {
