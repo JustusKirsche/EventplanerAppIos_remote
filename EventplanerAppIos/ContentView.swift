@@ -66,12 +66,13 @@ struct ContentView: View {
                         
                         List{
                             ForEach(eventArray){ event in
+                                let index = eventArray.firstIndex(where: {$0.id == event.id})
                                 NavigationLink(
                                     "\(event.name)",
                                     destination: EventInfoView(
                                         state: CreateEventViewState(),
                                         eventArray: $eventArray,
-                                        index: 0)
+                                        index: index ?? 0)
                                 )
                             }
                             //.navigationTitle("Event List")
