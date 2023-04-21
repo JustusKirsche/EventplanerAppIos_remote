@@ -13,18 +13,18 @@ import SwiftUI
 
 class CreateEventViewState: ObservableObject{
     
-    @State var name: String = ""
-    @State var description: String = ""
-    @State var location: String = ""
-    @State var date: String = ""
-    @State var contact: String = ""
+    @Published var name: String = ""
+    @Published var description: String = ""
+    @Published var location: String = ""
+    @Published var date: String = ""
+    @Published var contact: String = ""
     
-    @State var costs: Int = 0
-    @State var maxParticipant: Int = 0
-    @State var minAge: Int = 0
+    @Published var costs: Int = 0
+    @Published var maxParticipant: Int = 0
+    @Published var minAge: Int = 0
 
 //    sind nur zum umwandeln von String zu Int da
-    @State var costsString: String = ""
-    @State var maxParticipantString: String = ""
-    @State var minAgeString: String = ""
+    @Published var costsString: String = ""
+    @Published var maxParticipantString: String = ""
+    @Published var minAgeString: String = ""
 }

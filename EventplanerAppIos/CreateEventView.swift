@@ -10,89 +10,100 @@ import Foundation
 
 
 
-    
+
 struct CreateEventView: View {
-    @StateObject var state: CreateEventViewState
+    @State private var SafeIsVisible: Bool = false
+    
+    @State var state: CreateEventViewState
     @Binding var eventArray: [Event]
     @State var index:Int
     
     var body: some View {
-
+        
         VStack{
             Text("Name: ")
                 .font(.headline)
                 .padding()
             
-            TextField("Eingabe", text: state.$name)
+            TextField("Eingabe", text: $state.name) // Hier wird das Binding verwendet
                 .padding(.leading)
             
             Text("Locatin: ")
                 .font(.headline)
                 .padding()
             
-            TextField("Eingabe", text: state.$description)
+            TextField("Eingabe", text: $state.description) // Hier wird das Binding verwendet
                 .padding(.leading)
             
             Text("Date: ")
                 .font(.headline)
                 .padding()
             
-            TextField("Eingabe", text: state.$location)
+            TextField("Eingabe", text: $state.location) // Hier wird das Binding verwendet
                 .padding(.leading)
+            
             Text("Contact: ")
                 .font(.headline)
                 .padding()
             
-            TextField("Eingabe", text: state.$date)
+            TextField("Eingabe", text: $state.contact) // Hier wird das Binding verwendet
                 .padding(.leading)
             
             Button("Save") {
-                print("Save button pressed")
-                state.minAge = Int(state.minAgeString) ?? 0
-                state.costs = Int(state.costsString) ?? 0
-                state.maxParticipant = Int(state.maxParticipantString) ?? 0
-                state.minAge = Int(state.minAgeString) ?? 0
-                
-                if (state.name == "" || state.name == "Test"){
-                    let event = Event(
-                        name: "Test",
-                        description: "Test event",
-                        location: "Wolfsburg",
-                        date: "12.01.2099",
-                        contact: "Jon Hammer",
-                        costs: 15,
-                        maxParticipant: 20,
-                        minAge: 18
-                    )
-                    eventArray.append(event)
-                }else{
-                    let event = Event(
-                        name: state.name,
-                        description: state.description,
-                        location: state.location,
-                        date: state.date,
-                        contact: state.contact,
-                        costs: state.costs,
-                        maxParticipant: state.maxParticipant,
-                        minAge: state.minAge
-                    )
-                    eventArray.append(event)
+                saveButtonPressed()
+            } .alert("Your event ist safed", isPresented: $SafeIsVisible) {
+                Button("Ok") {
+                    self.SafeIsVisible = false
                 }
-                
-                
-                state.name = ""
-                state.description = ""
-                state.location = ""
-                state.date = ""
-                state.contact = ""
-                state.costsString = ""
-                state.maxParticipantString = ""
-                state.minAgeString = ""
             }
             
         }
-
+        
     }
+    func saveButtonPressed() {
+        // Zugriff auf den aktuellen Wert von `state`
+        state.minAge = Int(state.minAgeString) ?? 0
+        state.costs = Int(state.costsString) ?? 0
+        state.maxParticipant = Int(state.maxParticipantString) ?? 0
+        state.minAge = Int(state.minAgeString) ?? 0
+        
+        if (state.name == "" || state.name == "Test"){
+            let event = Event(
+                name: "Test",
+                description: "Test event",
+                location: "Wolfsburg",
+                date: "12.01.2099",
+                contact: "Jon Hammer",
+                costs: 15,
+                maxParticipant: 20,
+                minAge: 18
+            )
+            eventArray.append(event)
+        } else {
+            let event = Event(
+                name: state.name,
+                description: state.description,
+                location: state.location,
+                date: state.date,
+                contact: state.contact,
+                costs: state.costs,
+                maxParticipant: state.maxParticipant,
+                minAge: state.minAge
+            )
+            eventArray.append(event)
+        }
+        
+        state.name = ""
+        state.description = ""
+        state.location = ""
+        state.date = ""
+        state.contact = ""
+        state.costsString = ""
+        state.maxParticipantString = ""
+        state.minAgeString = ""
+        SafeIsVisible = true
+    }
+    
 }
 struct CreateEventView_Previews: PreviewProvider {
     @State private static var eventArray = [Event]()

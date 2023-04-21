@@ -56,7 +56,7 @@ struct EventInfoView: View {
 struct EventInfoView_Previews: PreviewProvider {
     @State private static var eventArray = [Event]()
     static var previews: some View {
-        CreateEventView(
+        EventInfoView(
             state: CreateEventViewState(),
             eventArray: $eventArray,
             index: 0

@@ -30,31 +30,32 @@ struct ContentView: View {
             if tabIndex == 0 {
                 //                Home Tab
                 //                Hier kommt Justus View rein
-                
-                VStack {
-                                Image(systemName: "globe")
-                                    .foregroundColor(.green)
-                                    .scaleEffect(2)
-                                    .rotationEffect(.degrees(15))
-                                    .imageScale(.large)
-                                Text("Your Events")
-                                    .font(.largeTitle)
-                                    .padding(.all)
-                                
-                                List{
-                                    ForEach(eventArray){ event in
-                                        NavigationLink(
-                                            "\(event.name)",
-                                            destination: EventInfoView(
-                                                state: CreateEventViewState(),
-                                                eventArray: $eventArray,
-                                                index: 0)
-                                        )
-                                    }
-                                    .navigationTitle("Event List")
-                                }
+                NavigationView{
+                    VStack {
+                        Image(systemName: "globe")
+                            .foregroundColor(.green)
+                            .scaleEffect(2)
+                            .rotationEffect(.degrees(15))
+                            .imageScale(.large)
+                            .padding([.top, .leading, .trailing])
+                        Text("Your Events")
+                            .font(.largeTitle)
+                            .padding(.all)
+                        
+                        List{
+                            ForEach(eventArray){ event in
+                                NavigationLink(
+                                    "\(event.name)",
+                                    destination: EventInfoView(
+                                        state: CreateEventViewState(),
+                                        eventArray: $eventArray,
+                                        index: 0)
+                                )
                             }
-                            .foregroundColor(.black)
+                            .navigationTitle("Event List")
+                        }
+                    }
+                }
             } else if tabIndex == 2 {
                 //                Sing in Tab
                 Text("Sign in")
@@ -152,7 +153,7 @@ struct ContentView: View {
         } else {
             wrongUsername = 2
             
-
+            
         }
     }
 }
