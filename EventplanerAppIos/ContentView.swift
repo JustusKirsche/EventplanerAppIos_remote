@@ -18,11 +18,24 @@ struct ContentView: View {
     @State private var showingLoginScreen = false
     @State private var tabIndex = 0
     @State private var eventArray = [Event]()
+    @State private var darkMode = false
+    
+    func darkModeFunc(_ isOn: Bool){
+        if #available (iOS 13.0, *){
+            let appDelegate = UIApplication.shared.windows.first
+            return
+            if (isOn){
+                appDelegate?.overrideUserInterfaceStyle = .dark
+            }
+                appDelegate?.overrideUserInterfaceStyle = .light
+            return
+        }
+    }
     
     var body: some View {
         VStack {
             SlidingTabView(selection: $tabIndex,
-                           tabs: ["Home", "New Event", "Sign in","Settings"],
+                           tabs: ["Home", "New event", "Sign in","Settings"],
                            animation: .easeInOut,
                            activeAccentColor: .green,
                            selectionBarColor: .gray)
@@ -38,7 +51,7 @@ struct ContentView: View {
                             .rotationEffect(.degrees(15))
                             .imageScale(.large)
                             .padding([.top, .leading, .trailing])
-                        Text("Your Events")
+                        Text("Your events")
                             .font(.largeTitle)
                             .padding(.all)
                         
@@ -52,7 +65,7 @@ struct ContentView: View {
                                         index: 0)
                                 )
                             }
-                            .navigationTitle("Event List")
+                            .navigationTitle("Event list")
                         }
                     }
                 }
@@ -111,7 +124,11 @@ struct ContentView: View {
                 
             } else if tabIndex == 3 {
                 //                Settings Tab
-                Text("Settings")
+                VStack{
+                    Text("Settings")
+                    Toggle("Darkmode", isOn: $darkMode)
+                    
+                }.padding()
             } else if tabIndex == 1 {
                 //                New Event Tab
                 
@@ -163,6 +180,7 @@ struct ContentView: View {
             
         }
     }
+    
 }
 //Hier muss der Array mit den Events herrein mit hilfe von foreech
 
