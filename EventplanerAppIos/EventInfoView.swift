@@ -23,6 +23,7 @@ struct EventInfoView: View {
                 Text("Costs: \(eventArray [index].costs)$")
                 Text("Max participant: \(eventArray [index].maxParticipant)")
                 Text("Min Age: \(eventArray [index].minAge)")
+                
             }
         }
     }

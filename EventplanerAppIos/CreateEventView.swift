@@ -64,7 +64,6 @@ struct CreateEventView: View {
         state.minAge = Int(state.minAgeString) ?? 0
         state.costs = Int(state.costsString) ?? 0
         state.maxParticipant = Int(state.maxParticipantString) ?? 0
-        state.minAge = Int(state.minAgeString) ?? 0
         
         if (state.name == "" || state.name == "Test"){
             let event = Event(

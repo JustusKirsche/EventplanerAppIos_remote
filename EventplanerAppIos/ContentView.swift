@@ -23,18 +23,6 @@ struct ContentView: View {
     @State private var darkMode2 = false
     @State private var darkMode3 = false
     
-    func darkModeFunc(_ isOn: Bool){
-        if #available (iOS 13.0, *){
-            let appDelegate = UIApplication.shared.windows.first
-            return
-            if (isOn){
-                appDelegate?.overrideUserInterfaceStyle = .dark
-            }
-                appDelegate?.overrideUserInterfaceStyle = .light
-            return
-        }
-    }
-    
     var body: some View {
         VStack {
             SlidingTabView(selection: $tabIndex,
